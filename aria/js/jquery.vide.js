@@ -501,7 +501,7 @@ $(function(){
     })
 })
 
-$(window).load(function(){
+$(window).on('load', function () {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
        $("video").each(function(){
            $(this).get(0).play();
